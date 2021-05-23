@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="eliblogin" extends="struts-default">
+	
+		 
+
+		<action name="Adminlogin" class="com.callcenter.adminpage.AdminAction">
+
+			<result name="success">AdminWelcome.jsp</result>
+			<result name="input">AdminLogin.jsp</result>
+
+		</action>
+		<action name="addEmployeeform" class="com.callcentre.addemployee.AddEmployeeAction">
+
+			<result name="success">AdminSuccessful.jsp</result>
+			<result name="input">AddEmployee.jsp</result>
+
+
+		</action>
+
+		<action name="addQueryform" class="com.callcenter.user.QueryAction">
+
+			<result name="success">AddQuery.jsp</result>
+			<result name="input">AddQuery.jsp</result>
+
+
+		</action>
+		<action name="EmployeeaddQueryform" class="com.callcenter.user.QueryAction">
+
+			<result name="success">EmployeeAddQuery.jsp</result>
+			<result name="input">EmployeeAddQuery.jsp</result>
+
+
+		</action>
+		
+		<action name="Employeelogin" class="com.callcenter.employeepage.EmployeeAction">
+
+			<result name="success">EmployeeWelcome.jsp</result>
+			<result name="input">EmployeeLogin.jsp</result>
+
+
+		</action>
+
+		<action name="changeEmployeePassword" class="com.callcenter.employeepage.ChangePassword">
+
+			<result name="success">ChangePassword.jsp</result>
+			<result name="input">ChangePassword.jsp</result>
+
+
+		</action>
+
+		<action name="addUser">
+
+			<result name="success">AddCustomer.jsp</result>
+
+		</action>
+
+
+		<action name="index">
+
+			<result name="success">index.jsp</result>
+
+		</action>
+		<action name="admin">
+
+			<result name="success">AdminLogin.jsp</result>
+
+		</action>
+		<action name="employee">
+
+			<result name="success">EmployeeLogin.jsp</result>
+
+		</action>
+		<action name="aboutus">
+
+			<result name="success">About.jsp</result>
+
+		</action>
+		<action name="contactus">
+
+			<result name="success">Contact.jsp</result>
+
+		</action>
+		<action name="addEmployee">
+
+			<result name="success">AddEmployee.jsp</result>
+
+		</action>
+
+		<action name="manageEmployee">
+
+			<result name="success">RemoveEmployee.jsp</result>
+		</action>
+
+		<action name="manageCustomer">
+
+			<result name="success">AdminAddCustomer.jsp</result>
+
+		</action>
+
+		<action name="queryManagement">
+
+			<result name="success">AdminAddQuery.jsp</result>
+
+		</action>
+
+		<action name="EmployeeAddQuery">
+
+			<result name="success">EmployeeAddQuery.jsp</result>
+
+		</action>
+
+		<action name="assignCustomer">
+
+			<result name="success">Service1.jsp</result>
+
+		</action>
+		<action name="employeeReport">
+
+			<result name="success">EmployeeReport.jsp</result>
+
+		</action>
+		<action name="customerReport">
+
+			<result name="success">customerreport.jsp</result>
+
+		</action>
+		<action name="signOut">
+
+			<result name="success">index.jsp</result>
+
+		</action>
+
+		<action name="changePassword">
+
+			<result name="success">ChangePassword.jsp</result>
+
+		</action>
+
+		<action name="callactivity">
+
+			<result name="success">CallAction.jsp</result>
+
+		</action>
+		<action name="callstatus">
+
+			<result name="success">CallStatus.jsp</result>
+
+		</action>
+
+	</package>
+	<package name="fetchdata" extends="struts-default" namespace="/">
+
+		<action name="fetchRecords" class="com.callcenter.user.CustomerFetchingAction">
+
+			<result name="SUCCESS">customerreport.jsp</result>
+
+		</action>
+
+		<action name="fetchEmployeeRecords"
+			class="com.callcenter.employeepage.EmployeeFetchingAction">
+
+			<result name="SUCCESS">EmployeeReport.jsp</result>
+		</action>
+
+		<action name="updateStatus" class="com.callcenter.user.UpdateQueryAction">
+			<result name="success">CallStatus.jsp</result>
+			<result name="input">CallStatus.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="empdata" extends="struts-default" namespace="/">
+		<action name="searchEmployee"
+			class="com.callcenter.removeemployee.RemoveEmployeeAction">
+
+			<result name="success">SearchEmpDetail.jsp</result>
+			<result name="input">RemoveEmployee.jsp</result>
+		</action>
+
+		<action name="removeExistingEmployee"
+			class="com.callcenter.removeemployee.RemoveExistingEmployee">
+
+			<result name="success">EmpRemovedSuccess.jsp</result>
+			<result name="input">SearchEmpDetail.jsp</result>
+		</action>
+
+	</package>
+	<package name="adminAddCust" extends="struts-default"
+		namespace="/">
+
+		<action name="UserForm" class="com.callcenter.user.AddCustomerAction">
+			<result name="success">AdminAddQuery.jsp</result>
+			<result name="input">AdminAddCustomer.jsp</result>
+
+		</action>
+		<action name="EmployeeUserForm" class="com.callcenter.user.AddCustomerAction">
+			<result name="success">EmployeeAddQuery.jsp</result>
+			<result name="input">AddCustomer.jsp</result>
+
+		</action>
+		
+	</package>
+	<!-- <package name="userdata" extends="struts-default" namespace="/"> <action 
+		name="manageCustomer"> <result name="success">RemoveEmployee.jsp</result> 
+		</action> </package> -->
+</struts>    
