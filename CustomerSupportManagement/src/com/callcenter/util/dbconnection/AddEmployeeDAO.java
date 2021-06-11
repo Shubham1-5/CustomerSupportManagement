@@ -6,7 +6,7 @@ import com.callcentre.addemployee.AddEmployeeAction;
 
 public class AddEmployeeDAO extends BaseDAO {
 
-	Boolean flag=true;
+	Boolean flag = true;
 
 	public boolean addEmployee(AddEmployeeAction addEmployeeAction) {
 
@@ -39,7 +39,7 @@ public class AddEmployeeDAO extends BaseDAO {
 		System.out.println(flag);
 		if (!flag) {
 			return true;
-		} 
+		}
 		return false;
 	}
 }

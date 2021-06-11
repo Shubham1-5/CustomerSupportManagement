@@ -7,9 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/Admin.css" />
 </head>
 <body>
-	<img
-		src="images/Adm_Header.jpg"
-		height="350" width="1400" />
+	<img src="images/Adm_Header.jpg" height="350" width="1400" />
 	<br>
 	<br>
 	<div align="center" id="menu">

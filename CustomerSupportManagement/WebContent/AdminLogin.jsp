@@ -17,7 +17,7 @@
 			<div align="center"
 				style="font-size: 20px; font-weight: bold; text-decoration: underline">Admin
 				Login</div>
-				<br>
+			<br>
 			<div>
 				<s:textfield name="AdminId" label="Enter Admin Id"></s:textfield>
 
