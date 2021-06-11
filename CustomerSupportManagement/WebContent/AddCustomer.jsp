@@ -45,11 +45,11 @@
 			</div>
 
 		</s:form>
-		</div>
-		<br>
+	</div>
+	<br>
 
-		<div>
-			<s:include value="pages/footer.jsp"></s:include>
-		</div>
+	<div>
+		<s:include value="pages/footer.jsp"></s:include>
+	</div>
 </body>
 </html>
