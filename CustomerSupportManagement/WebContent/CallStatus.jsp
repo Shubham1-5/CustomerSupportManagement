@@ -32,9 +32,9 @@
 			<div>
 				<s:textfield name="customerId" label="CustomerId" required="true"></s:textfield>
 				<s:textfield name="queryId" label="Query ID" required="true"></s:textfield>
-				<s:select list="{'Pending','Under Process','Completed'}" name="status"
-				label="Status" required="true"></s:select>
-			
+				<s:select list="{'Pending','Under Process','Completed'}"
+					name="status" label="Status" required="true"></s:select>
+
 				<s:submit value="Update" align="center"></s:submit>
 				<s:submit value="Cancel" align="center"></s:submit>
 
