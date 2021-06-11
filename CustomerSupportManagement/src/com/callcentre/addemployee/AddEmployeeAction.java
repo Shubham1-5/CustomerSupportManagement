@@ -153,12 +153,12 @@ public class AddEmployeeAction extends ActionSupport implements SessionAware {
 		if ((dob == null || "".equals(dob.trim()))) {
 			addFieldError("dob", "DOB is required.");
 		}
-		if(!dob.matches("[1-2][7-9][7-9][0-9]-[0-1][0-9]-[0-3][0-9]")){
-			
+		if (!dob.matches("[1-2][7-9][7-9][0-9]-[0-1][0-9]-[0-3][0-9]")) {
+
 			addFieldError("dob", "DOB should be in correct format.");
-			
+
 		}
-		
+
 		if (email == null || "".equals(email.trim()) || (!email.contains("@"))) {
 			addFieldError("email", "Enter correct from of Email id");
 		}

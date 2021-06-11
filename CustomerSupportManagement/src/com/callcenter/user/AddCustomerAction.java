@@ -99,7 +99,8 @@ public class AddCustomerAction extends ActionSupport implements SessionAware {
 		if (password == null || "".equals(password.trim())) {
 			addFieldError("password", "Password is required.");
 		}
-		if ((userMobile == null || "".equals(userMobile.trim()))||(!userMobile.matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))) {
+		if ((userMobile == null || "".equals(userMobile.trim()))
+				|| (!userMobile.matches("[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"))) {
 			addFieldError("userMobile", "User Mobile no. is required.");
 		}
 	}
